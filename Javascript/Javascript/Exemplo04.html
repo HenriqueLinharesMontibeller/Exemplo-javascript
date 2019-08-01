@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bib esfirra</title>
+    <script src="Exemplo04.js"></script>
+    <link rel="stylesheet" href="Exemplo04.css">
+    <link rel="shortcut icon" href="https://lh5.googleusercontent.com/-h_p2pesrgVU/TX5fFEG-QfI/AAAAAAAAAqY/qF53PGgoQ_s/s1600/esfiha.jpg">
+</head>
+
+<body>
+    <div class="esquerda">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" autofocus="true" onkeypress="salvar(event)">
+        <button onclick="adicionar()">Adicionar</button>
+    </div>
+    <div class="direita">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="registros"></tbody>
+        </table>
+        <h3>Quantidade: </h3>
+        <span id="quantidade"></span>
+    </div>
+</body>
+
+</html>
