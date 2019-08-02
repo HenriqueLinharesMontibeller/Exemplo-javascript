@@ -21,13 +21,14 @@
         <div class="">
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" autofocus="true" onkeypress="salvar(event)" class="form-control">
+                <input type="text" id="nome" autofocus="true" onkeypress="salvar(event)" class="form-control"
+                  placeholder="Digite o nome" onfocusout="validar()">
             </div>
-            <button class="btn btn-success" onclick="adicionar()">Adicionar</button>
+            <button class="btn btn-success" onclick="adicionarEditar()">Adicionar</button>
         </div>
     </div>
     <div class="">
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover bg-dark text-light">
             <thead>
                 <tr>
                     <th>Nome</th>
